@@ -1,0 +1,122 @@
+.colorNav{
+    background-color: white !important;
+}
+
+.cardCbd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn-primary{
+    background-color: darkolivegreen;
+    border: solid black;
+}
+.btn-primary:hover{
+    background-color:black;
+}
+
+button:hover{
+    background-color: rgba(253, 253, 253, 0.8)
+}
+a:hover {
+    background-color: rgba(22, 67, 20, 0.8)
+}
+
+.titMed{
+    color: black !important;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* ------------------ FOOTER -------------------------- */
+
+.footer { grid-area: footer; 
+    background-color: azure;
+    width: 100vw;
+   
+}
+ 
+.footer{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.direccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+
+.imgF{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4px;
+}
+
+.derechosF{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+/* Enlaces (a) de las redes sociales */
+.aImgF{
+    width: 3%;
+}
+.aImgF:hover{
+    background-color:azure
+}
+
+.aImgLn{
+    width: 3%;
+}
+
+.aImgLn:hover{
+    background-color:azure
+}
+
+/* Logos de las redes sociales (ocupan el 100% de a)*/
+.imgFace{
+    width: 100%;
+}
+ 
+.imgLn{
+    width: 100%;
+}
+/* ------------------ CONTACTO -------------------------- */
+.contacto{
+    margin: 50px;
+}
+
+.titCon{
+    color: green !important;
+    display: flex;
+    justify-content: space-around;
+}
+
+.accordion-header {
+    background-color: darkgreen;
+}
+
+.accordion-button:not(.collapsed){
+    background-color:darkseagreen;
+    color: black;
+}
+.dat{
+    margin-top: 10px;
+
+}
+
+.genCann{
+    color: black;
+}
+
+.genCann::selection{
+    color: #242329;
+    background-color: #f6bfe2;
+}

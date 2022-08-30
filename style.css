@@ -1,7 +1,14 @@
 .colorNav{
     background-color: white !important;
 }
+/* -------------------------PAGINA PRINCIPAL------------------------------- */
+.cardIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+/* ------------------------- FIN PAGINA PRINCIPAL------------------------------- */
 .cardCbd{
     display: flex;
     flex-direction: row;
@@ -29,7 +36,127 @@ a:hover {
 }
 
 
+/* ------------------ LABORATORIO -------------------------- */
+.containerLab {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "main";
+  }
+  
+  .main { grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+/* SECCIONES DEL MAIN */
+.potencia{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px red;
+    justify-content: space-between;
+}
+.pot{
+    margin: 10px;
+}
+.textPot{
+  word-spacing: 15px;
+  letter-spacing: 2px;
+  padding: 10px;
+}
 
+/* logo analisis */
+.potT{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.imgLab{
+  width: 30%;
+  height: 30%;
+}
+.terpenos{
+  display: flex;
+  flex-direction: column;
+  border: solid 2px red;
+  justify-content: space-between;
+}
+
+.ter{
+  margin: 10px;
+}
+.textTer{
+word-spacing: 15px;
+letter-spacing: 2px;
+padding: 10px;
+}
+.terT{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.agroquimicos{
+  display: flex;
+  flex-direction: column;
+  border: solid 2px red;
+  justify-content: space-between;
+}
+
+.agro{
+  margin: 10px;
+}
+.textAgro{
+word-spacing: 15px;
+letter-spacing: 2px;
+padding: 10px;
+}
+
+.agroT{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metales{
+  display: flex;
+  flex-direction: column;
+  border: solid 2px red;
+  justify-content: space-between;
+}
+
+.met{
+  margin: 10px;
+}
+.textMet{
+word-spacing: 15px;
+letter-spacing: 2px;
+padding: 10px;
+}
+
+.metT{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botonLab{
+    border: solid;
+    align-items: center;
+    margin: 2px;
+    background-color: green;
+}
+.titulo{
+    display: flex;
+    justify-content: space-around;
+}
 /* ------------------ FOOTER -------------------------- */
 
 .footer { grid-area: footer; 
@@ -119,4 +246,66 @@ a:hover {
 .genCann::selection{
     color: #242329;
     background-color: #f6bfe2;
+}
+
+/* Media QUERYS PRODUCTOS*/
+@media (max-width:500px){
+    .cardCbd{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;}
+
+    .cardIndex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+    }
+}
+
+/* Media QUERYS LABORATORIO*/
+@media (max-width: 650px){
+    .main { grid-area: main;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        border: solid palevioletred;
+    }
+}
+
+/* ANIMACIONES Y TRANSCICIONES */
+img:hover{
+    transform: scale(0.9,0.9) translate(5px, 5px);
+    transition: 1ms;
+}
+
+input:focus{
+    background-color: rgb(215, 255, 155);
+}
+
+h2{
+    animation-name: efectoTitulo;
+    animation-duration: 10ms;
+    animation-iteration-count: infinite;
+
+}
+
+h2{
+    animation-name: efectoTitulo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes efectoTitulo {
+    0%{
+        color: rgb(6, 57, 30);
+    }
+    
+    50%{ 
+        color: rgb(36, 59, 13);
+    }
+    100%{
+        color: rgb(94, 128, 40);
+    }
 }

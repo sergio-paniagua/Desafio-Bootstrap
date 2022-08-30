@@ -157,6 +157,28 @@ padding: 10px;
     display: flex;
     justify-content: space-around;
 }
+/* ------------------ SOBRE NOSOTROS -------------------------- */
+.titNos{
+    display: flex;
+    justify-content: space-around;
+    background-color: darkgreen;
+    color: black;
+}
+.nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+}
+ .imgNos{
+    width: 40vh;
+    margin: 10px;
+    padding-top: 15px;
+ }
+ .artNos{
+
+ }
+ 
 /* ------------------ FOOTER -------------------------- */
 
 .footer { grid-area: footer; 
@@ -274,6 +296,21 @@ padding: 10px;
     }
 }
 
+/* Media QUERYS NOSOTROS*/
+@media (max-width: 700px){
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 50px;
+    }
+
+    .picNos{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
 /* ANIMACIONES Y TRANSCICIONES */
 img:hover{
     transform: scale(0.9,0.9) translate(5px, 5px);
